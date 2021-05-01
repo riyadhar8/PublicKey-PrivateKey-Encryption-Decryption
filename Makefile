@@ -1,10 +1,10 @@
-all:		encrypt	decrypt
+all:	encrypt	decrypt
 
 encrypt:	encrypt.c 
-			gcc encrypt.c -o encrypt -lcrypto -lssl
+		gcc encrypt.c -o encrypt -lcrypto -lssl
 
 decrypt:	decrypt.c 
-			gcc decrypt.c -o decrypt -lcrypto -lssl
+		gcc decrypt.c -o decrypt -lcrypto -lssl
 
 clean:		
-			rm -rf encrypt decrypt encrypted.txt decrypted.txt
+		rm -rf encrypt decrypt
